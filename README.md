@@ -1,50 +1,115 @@
-# Welcome to your Expo app 👋
+# Myapp - Professional React Native App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern React Native application built with Expo, featuring Context API for state management, authentication, and product management.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Authentication System**: Secure login with token-based authentication
+- **Product Management**: Browse and view product details
+- **Context API**: Professional state management using React Context
+- **Theme Support**: Dark and light mode themes
+- **Navigation**: React Navigation integrated with Expo Router
+- **Responsive Design**: Works seamlessly on web, iOS, and Android
 
+## 📋 Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- Expo CLI
+
+## 🛠️ Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/03481858848/Myapp.git
+   cd Myapp
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Start the development server:
    ```bash
-   npx expo start
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+## 🎯 Usage
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### Web
 ```bash
-npm run reset-project
+npm run web
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Android
+```bash
+npm run android
+```
 
-## Learn more
+### iOS
+```bash
+npm run ios
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📱 App Structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+app/
+├── context/          # Context providers (Auth, API, Theme, Loader)
+├── navigation/       # Navigation configuration
+├── screens/          # Screen components
+│   ├── LoginScreen.tsx
+│   ├── ProductList.tsx
+│   └── ProductDetails.tsx
+└── _layout.tsx       # Root layout
 
-## Join the community
+components/           # Reusable components
+```
 
-Join our community of developers creating universal apps.
+## 🔐 Login Credentials
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **Email**: sahil123@gmail.com
+- **Password**: Sahil12345
+
+## 🛠️ Tech Stack
+
+- **React Native**: 0.81.5
+- **Expo**: ~54.0.30
+- **React Navigation**: ^7.1.26
+- **Expo Router**: ~6.0.21
+- **Axios**: ^1.13.2
+- **TypeScript**: ~5.9.2
+
+## 📦 Key Dependencies
+
+- `@react-navigation/native` - Navigation library
+- `expo-router` - File-based routing
+- `axios` - HTTP client
+- `react-native-toast-message` - Toast notifications
+- `@react-native-async-storage/async-storage` - Local storage
+
+## 🎨 Features in Detail
+
+### Authentication
+- Token-based authentication
+- Persistent login with AsyncStorage/localStorage
+- Secure credential handling
+
+### Product Management
+- Product listing with search functionality
+- Product details view
+- Pull-to-refresh support
+
+### Theme Management
+- Dark/Light mode toggle
+- System theme detection
+- Smooth theme transitions
+
+## 📝 License
+
+This project is private and proprietary.
+
+## 👨‍💻 Developer
+
+Built with ❤️ using React Native and Expo
